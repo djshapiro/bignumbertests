@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "timeit": "^0.1.1"
+    "timeit": "^0.1.1",
+    "bignumber": "*",
+    "web3": "*"
   }
 }
