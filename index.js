@@ -2,6 +2,7 @@ const timeit = require('timeit');
 const web3 = require('web3');
 const bignumber = require('bignumber.js');
 
+
 const iterations = 500000;
 
 const myweb3 = new web3(web3.currentProvider);
