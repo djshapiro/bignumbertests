@@ -3,17 +3,9 @@ const web3 = require('web3');
 const bignumber = require('bignumber.js');
 const ethers = require('ethers');
 
-const iterations = 10000;
+const iterations = 20000;
 
 const myweb3 = new web3(web3.currentProvider);
-
-const normalFn = (done) => {
-  let tok = 10;
-  let wei = 300;
-  let tot = 4000;
-  (tot * wei / tok).toString();
-  done();
-}
 
 const web3Fn = (done) => {
   let tok = new myweb3.BigNumber("10000000000");
@@ -44,6 +36,14 @@ const ethersBigNumberifyFn = (done) => {
   let wei = new ethers.utils.bigNumberify("300000000000");
   let tot = new ethers.utils.bigNumberify("4000000000000");
   tot.mul(wei).div(tok).toString();
+  done();
+}
+
+const normalFn = (done) => {
+  let tok = 10000000000;
+  let wei = 300000000000;
+  let tot = 4000000000000;
+  (tot * wei / tok).toString();
   done();
 }
 

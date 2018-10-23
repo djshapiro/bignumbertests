@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "timeit": "^0.1.1",
-    "bignumber": "*",
+    "bignumber.js": "*",
     "web3": "*",
     "ethers": "*"
   }
